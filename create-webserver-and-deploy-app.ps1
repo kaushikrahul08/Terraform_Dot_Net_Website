@@ -5,8 +5,8 @@ Add-WindowsFeature -Name Web-Server -IncludeAllSubFeature
 Remove-Item C:\inetpub\wwwroot\* -Recurse -Force
 
 # download website zip
-$ZipBlobUrl = 'https://csg100320009f275bed.blob.core.windows.net/data/Website.zip'
-$ZipBlobDownloadLocation = 'C:\Website.zip'
+$ZipBlobUrl = 'https://github.com/kaushikrahul08/Terraform_Dot_Net_Website/blob/master/Website.zip'
+$ZipBlobDownloadLocation = 'E:\Website.zip'
 (New-Object System.Net.WebClient).DownloadFile($ZipBlobUrl, $ZipBlobDownloadLocation)
 
 # extract downloaded zip
